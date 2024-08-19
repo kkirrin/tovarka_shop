@@ -1,0 +1,42 @@
+/* Секция Популярные категории */
+
+#cat_p li div{
+    transition: all 0.6s ease-in-out;
+}
+
+#cat_p li img{
+    transition: all 0.6s ease-in-out;
+}
+
+#cat_p li p{
+    transition: all 0.6s ease-in-out;
+}
+
+#cat_p li img {
+    scale: 0.8;
+}
+
+
+#cat_p li:hover div{
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+#cat_p li:hover img {
+    scale: 0.9;
+}
+
+#cat_p li:hover p {
+    color: var(--blue);
+    font-weight: 500;
+}
+
+
+/* Секция Популярные товары */
+
+#product_p .product_popular-item .swiper-slide div {
+    transition: all 0.6s ease-in-out;
+}
+
+#product_p .product_popular-item .swiper-slide:hover div{
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}

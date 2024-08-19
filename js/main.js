@@ -1,7 +1,7 @@
 import { initNav } from "./module/nav.js";
-import { initSlider } from "./module/sliders.js";
 import { initPopup } from "./module/popup.js";
 import { initModal } from "./module/modal.js";
+import { initProductPopularSlider } from "./module/sliders.js";
 
 
 
@@ -10,9 +10,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
     initNav();
     baguetteBox.run('.gallery-wrapper');
-    initSlider();
     initPopup();
     initModal(); 
+    initProductPopularSlider();
     
 
 });
