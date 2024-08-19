@@ -3,12 +3,12 @@
 
 
 /* Импорт кастомных стилей для компонентов */
-@import './block/button.css';
 @import './block/menu-button.css';
 @import './block/menu.css';
 @import './block/scrool-top.css';
 @import './block/popup.css';
 @import './block/animateSocialsBtn.css';
+@import './block/modal.css';
 
 /* Импорт TailWind */
 @tailwind base;
@@ -17,17 +17,25 @@
 
 /* Зарегистрируйте пользовательское семейство шрифтов и сообщите браузеру, где его найти. */
 @font-face {
-    font-family: 'Noto Sans';
-    src: url('../src/fonts/NotoSans-Regular.ttf');
-    font-weight: normal;
+    font-family: 'Roboto';
+    src: url('../src/fonts/Roboto-Regular.ttf');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'NokiaKokia';
-    src: url('../src/fonts/NokiaKokia\(RYS\ BY\ LYAJKA\).ttf');
-    font-weight: normal;
+    font-family: 'Roboto';
+    src: url('../src/fonts/Roboto-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../src/fonts/Roboto-Bold.ttf');
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
@@ -39,21 +47,10 @@
     }
 
     body {
-        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
         color: #262626;
-        background: linear-gradient(166deg, #FFF 5.27%, rgba(255, 255, 255, 0.00) 78.75%);
+        background: #F5F5F5;
         font-weight: 400;
-    }
-
-    h2, h3 {
-        font-family: 'NokiaKokia';
-        line-height: 85px;
-    }
-
-    span.counter-items,
-    span.counter-client,
-    span.counter-years {
-        font-family: 'NokiaKokia';
     }
 }
 
@@ -74,8 +71,23 @@
   background: rgb(255, 255, 255);
 }
 
+:root {
+    --black: #000000;
+    --white: #fff;
+    --blue: #3B8ED7;
+    --light-gray: rgb(140, 140, 140);
+
+    --duration-add-animate-class: 2;
+    --duration-hover: 0.5;
+}
 
 
+ html {
+        scroll-behavior: smooth;
+        scrollbar-width: 2;
+        scrollbar-color: var(--blue) var(--light-gray);
+        font-family: 'Involve';
+}   
 /* Прочие классы */
 
 .lock {
@@ -121,4 +133,43 @@
 
 .title {
     line-height: 85px !important;
+}
+
+
+.vertical__line {
+    position: relative;
+}
+
+.vertical__line::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 100%;
+    background-color: #D9D9D9;
+}
+
+input:focus {
+    border: none !important;
+}
+
+.cart_btn {
+    border-radius: 100%;
+    padding: 24px;
+    background-color: var(--blue);
+}
+
+.cart_btn:hover {
+
+}
+
+@media screen and (max-width: 480px) {
+    .vertical__line::before {
+        display: none;
+    }
+    .cart_btn {
+        display: none;
+    }
 }
