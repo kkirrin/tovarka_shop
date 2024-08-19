@@ -9,6 +9,7 @@
 @import './block/popup.css';
 @import './block/animateSocialsBtn.css';
 @import './block/modal.css';
+@import './block/animate_block.css';
 
 /* Импорт TailWind */
 @tailwind base;
