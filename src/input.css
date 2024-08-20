@@ -10,6 +10,8 @@
 @import './block/animateSocialsBtn.css';
 @import './block/modal.css';
 @import './block/animate_block.css';
+@import './block/clip_box.css';
+@import './block/all_category.css';
 
 /* Импорт TailWind */
 @tailwind base;
@@ -173,4 +175,15 @@ input:focus {
     .cart_btn {
         display: none;
     }
+}
+
+.swiper-pagination {
+    bottom: -40% !important;
+    left: 180px !important;
+}
+
+.swiper-pagination-bullet {
+    width: 24px !important;
+    height: 3px !important;
+    border-radius: 0 !important;
 }

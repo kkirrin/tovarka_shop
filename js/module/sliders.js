@@ -37,3 +37,31 @@ export const initProductPopularSlider = () => {
             });
         }
 }
+
+export const initMainSwiper = () => {
+    const item = document.querySelector('.main-item');
+        let swiper;
+        if (item) {
+            
+            swiper = new Swiper(item, {
+               
+                speed: 3000,
+                direction: 'horizontal',
+                spaceBetween: 30,
+                slidesPerView: 1,
+                equalHeight: true,
+
+                // If we need pagination
+                navigation: {
+                    nextEl: ".main-item-next",
+                    prevEl: ".main-item-prev",
+                },
+                
+                    pagination: {
+                        el: '.swiper-pagination',
+                        type: 'bullets',
+                      },
+    
+            });
+        }
+}
