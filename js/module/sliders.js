@@ -65,3 +65,27 @@ export const initMainSwiper = () => {
             });
         }
 }
+
+
+export const initNewSwiper= () => {
+    const item = document.querySelector('.new-item');
+        let swiper;
+        if (item) {
+            
+            swiper = new Swiper(item, {
+               
+                speed: 3000,
+                direction: 'horizontal',
+                spaceBetween: 30,
+                slidesPerView: 1,
+                equalHeight: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+    
+            });
+        }
+}
