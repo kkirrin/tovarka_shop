@@ -12,6 +12,7 @@
 @import './block/animate_block.css';
 @import './block/clip_box.css';
 @import './block/all_category.css';
+@import './block/new.css';
 
 /* Импорт TailWind */
 @tailwind base;
@@ -79,7 +80,7 @@
     --white: #fff;
     --blue: #3B8ED7;
     --light-gray: rgb(140, 140, 140);
-
+    --dark-gray: #E9E9E9;
     --duration-add-animate-class: 2;
     --duration-hover: 0.5;
 }
@@ -179,6 +180,7 @@ input:focus {
 
 .swiper-pagination {
     bottom: -40% !important;
+
     left: 180px !important;
 }
 

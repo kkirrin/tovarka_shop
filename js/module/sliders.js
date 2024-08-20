@@ -67,8 +67,8 @@ export const initMainSwiper = () => {
 }
 
 
-export const initNewSwiper= () => {
-    const item = document.querySelector('.new-item');
+export const initHitSwiper= () => {
+    const item = document.querySelector('.hit-item');
         let swiper;
         if (item) {
             
@@ -88,4 +88,68 @@ export const initNewSwiper= () => {
     
             });
         }
+}
+
+
+export const initNewSwiper = () => {
+    // слайдер "новинки"
+    const exclusiveSlider = document.querySelector('.new-swiper');
+
+    if (exclusiveSlider) {
+        const sliderItems = document.querySelectorAll('.new-item');
+        console.log(window.innerWidth)
+        if (window.innerWidth < 769 ) {
+            console.log('f')
+            sliderItems.forEach((slide) => {
+                slide.classList.add('swiper-slide');
+            });
+
+            console.log('количество items', sliderItems);
+        }
+
+        let breakpoint = window.matchMedia('(min-width:1023px)');
+        let swiper;
+
+        const breakpointChecker = function () {
+            if (breakpoint.matches === true) {
+
+                if (swiper !== undefined) {
+                    swiper.destroy(true, true);
+                } return;
+
+            } else if (breakpoint.matches === false) {
+                // eslint-disable-next-line consistent-return
+                return exclusiveSliderInit();
+            }
+        };
+
+        const exclusiveSliderInit = function () {
+            swiper = new Swiper(exclusiveSlider, {
+                loop: true,
+                spaceBetween: 30,
+                init: true,
+                slidesPerView: 1.5,
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+
+                    500: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+
+                    767: {
+                        slidesPerView: 2,
+                        spaceBetween: 15,
+                    },
+                },
+
+            });
+        };
+
+        breakpoint.addEventListener('change', breakpointChecker);
+        breakpointChecker();
+    }
 }
