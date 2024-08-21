@@ -1409,8 +1409,16 @@ body {
   position: relative;
 }
 
+.-top-\[0px\]{
+  top: -0px;
+}
+
 .-top-\[46\%\]{
   top: -46%;
+}
+
+.right-0{
+  right: 0px;
 }
 
 .right-\[160px\]{
@@ -1423,30 +1431,6 @@ body {
 
 .top-0{
   top: 0px;
-}
-
-.right-0{
-  right: 0px;
-}
-
-.-top-\[20px\]{
-  top: -20px;
-}
-
-.-top-\[40px\]{
-  top: -40px;
-}
-
-.-top-\[80px\]{
-  top: -80px;
-}
-
-.-top-\[0px\]{
-  top: -0px;
-}
-
-.bottom-0{
-  bottom: 0px;
 }
 
 .z-10{
@@ -1473,28 +1457,12 @@ body {
   height: 0.75rem;
 }
 
-.max-h-\[330px\]{
-  max-height: 330px;
-}
-
-.max-h-\[500px\]{
-  max-height: 500px;
-}
-
-.max-h-\[336px\]{
-  max-height: 336px;
-}
-
 .min-h-\[172px\]{
   min-height: 172px;
 }
 
 .min-h-\[190px\]{
   min-height: 190px;
-}
-
-.min-h-\[260px\]{
-  min-height: 260px;
 }
 
 .min-h-\[440px\]{
@@ -1529,13 +1497,31 @@ body {
   min-width: 300px;
 }
 
+.min-w-\[500px\]{
+  min-width: 500px;
+}
+
 .max-w-\[1100px\]{
   max-width: 1100px;
+}
+
+.max-w-\[500px\]{
+  max-width: 500px;
+}
+
+.max-w-\[700px\]{
+  max-width: 700px;
 }
 
 .scale-90{
   --tw-scale-x: .9;
   --tw-scale-y: .9;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-75{
+  --tw-scale-x: .75;
+  --tw-scale-y: .75;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1547,16 +1533,8 @@ body {
   flex-direction: column;
 }
 
-.items-end{
-  align-items: flex-end;
-}
-
 .items-center{
   align-items: center;
-}
-
-.justify-end{
-  justify-content: flex-end;
 }
 
 .justify-center{
@@ -1676,12 +1654,12 @@ body {
   padding: 2px;
 }
 
-.p-\[8px\]{
-  padding: 8px;
-}
-
 .p-\[30px\]{
   padding: 30px;
+}
+
+.p-\[8px\]{
+  padding: 8px;
 }
 
 .px-\[15px\]{
@@ -1769,6 +1747,30 @@ body {
 
 .pt-\[8px\]{
   padding-top: 8px;
+}
+
+.pb-\[46px\]{
+  padding-bottom: 46px;
+}
+
+.pb-\[30px\]{
+  padding-bottom: 30px;
+}
+
+.pt-\[36px\]{
+  padding-top: 36px;
+}
+
+.pt-\[30px\]{
+  padding-top: 30px;
+}
+
+.pt-\[10px\]{
+  padding-top: 10px;
+}
+
+.pt-\[24px\]{
+  padding-top: 24px;
 }
 
 .text-center{
@@ -2200,10 +2202,6 @@ input:focus {
   .sm\:text-\[24px\]{
     font-size: 24px;
   }
-
-  .sm\:text-\[\]{
-    color: ;
-  }
 }
 
 @media (min-width: 1024px){
@@ -2235,6 +2233,16 @@ input:focus {
     width: 100%;
   }
 
+  .md\:w-auto{
+    width: auto;
+  }
+
+  .md\:scale-100{
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .md\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -2245,6 +2253,10 @@ input:focus {
 
   .md\:justify-between{
     justify-content: space-between;
+  }
+
+  .md\:gap-\[20px\]{
+    gap: 20px;
   }
 
   .md\:border-b{
@@ -2274,6 +2286,14 @@ input:focus {
 
   .md\:pt-\[60px\]{
     padding-top: 60px;
+  }
+
+  .md\:pb-\[46px\]{
+    padding-bottom: 46px;
+  }
+
+  .md\:pt-\[12px\]{
+    padding-top: 12px;
   }
 
   .md\:text-4xl{
