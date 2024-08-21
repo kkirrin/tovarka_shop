@@ -200,11 +200,11 @@
 
                         <div class="new-item">
                             <h2 class="text-black md:text-[38px] text-[20px]">Новинки</h2>
-                            <p class="clip_box top right">
-                                <a href="" class="clip text-white rounded-[40px] bg-blue px-[15px] w-[280px] py-[20px] mt-[20px] font-medium btn_catalog--blue clip_box ">
-                                    <p class="text-center">Перейти в каталог</p>
+                            <div class="clip_box top right">
+                                <a href="" class="clip text-white text-center rounded-[40px] bg-blue px-[15px] w-[280px] py-[20px] mt-[20px] font-medium btn_catalog--blue clip_box ">
+                                    <p class="flex justify-center">Перейти в каталог</p>
                                 </a>
-                            </p>
+                            </div>
                             <div class="relative">
                                 <img src="./src/img/main/pc.png" alt="">
                             </div>
@@ -230,19 +230,52 @@
 
             <section class="md:pt-[60px] sm:pt-[40px] xs:pt-[40px] sale-swiper">
                 <div class="container">
-                    <div class="flex gap-[30px]">
-                        <div class="">
-                            
+                    <div id="sale_list" class="flex gap-[30px] min-h-[500px]">
+                        
+                        <div class="flex flex-col items-center justify-center relative min-w-[300px]">
+                            <div class="absolute -top-[0px]">
+                                <img class="scale-90" src="./src/img/main/persent.png" alt="">
+                            </div>
+
+                            <div class="flex flex-col justify-center items-center gap-[10px] bg-gray p-[20px] rounded-[30px]">
+                                <img src="./src/img/main/pngwing 1.png" alt="">
+                                <p>Телескоп F30070M</p>
+                                <div class="flex gap-[10px]">
+                                    <p class="text-black font-medium">6 950 ₽</p>
+                                    <p class="text-light-gray font-medium">7 722 ₽</p>
+                                </div>
+                            </div>
+
                         </div>
+                      
 
-                        <div>
+                        <div class="w-full rounded-[30px] bg-gray">
+                            <div class="relative flex flex-col w-full">
+                                <div class="p-[30px]">
+                                    <h2 class="md:text-[46px] text-[20px] font-medium">Товар со скидкой</h2>
+                                    <p class="md:text-[24px] text-[16px]">VR шлем Pico Neo 4,8+128G</p>
+                                    <div class="flex gap-[10px]">
+                                        <p class="text-black font-medium">6 950 ₽</p>
+                                        <p class="text-light-gray font-medium">7 722 ₽</p>
+                                    </div>
+                                </div>
 
+                                <div class="absolute top-0 right-0">
+                                    <img src="./src/img/main/Remove-bg 4.png" alt="">
+                                </div>
+
+                                <div class="clip_box bottom left">
+                                    <a href="" class="clip text-white text-center rounded-[40px] bg-blue px-[15px] w-[280px] py-[20px] mt-[20px] font-medium btn_catalog--blue clip_box ">
+                                        <p class="flex justify-center">Смотреть все</p>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             
-            <!-- <section class="md:py-[15px] sm:py-[10px] xs:py-[5px]">
+            <section class="md:py-[15px] sm:py-[10px] xs:py-[5px]">
                 <div class="container">
                     <div class="flex gap-[27px]">
                         <aside class="min-w-[255px] rounded-[30px] bg-white p-[2px]">
@@ -296,34 +329,31 @@
                             <div class="main-wrapper overflow-hidden">
                                 <h2 class="text-black md:text-[38px] sm:text-[24px] xs:text-[24px] font-medium">Широкий выбор <span class="text-blue md:text-[38px] sm:text-[24px] xs:text-[24px]">трендовых</span> товаров</h2>
                                 <span class="text-[16px]">Качество, проверенное временем</span>
-                                <div class="main-item">
+                                <div class="main-item relative">
                                     <div class="swiper-pagination"></div>
+
+                                    <div class="absolute">
+                                        <div class="clip_box top left">
+                                            <a href="" class="clip text-white rounded-[40px] bg-blue px-[15px] w-[280px] py-[20px] mt-[20px] font-medium btn_catalog--blue clip_box ">
+                                                <p class="text-center">Перейти в каталог</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                        
                                     <div class="swiper-wrapper relative">
-                                        <div class="swiper-slide relative pt-[15px]">
-                                            <a href="" class="text-white rounded-[40px] bg-blue px-[15px] w-[280px] py-[20px] mt-[20px] font-medium btn_catalog--blue clip_box ">
-                                                <p class="text-center">Перейти в каталог</p>
-                                            </a>
-                                            <img class="w-full" src="./src/img/main/main_1.png" alt="" >                                        
+                                        <div class="swiper-slide relative pt-[15px]">   
+                                            <img class="w-full" src="./src/img/main/sale_1.png" alt="" >                                        
                                         </div>
 
                                         <div class="swiper-slide relative pt-[15px]">
-                                            <a href="" class="text-white rounded-[40px] bg-blue px-[15px] w-[280px] py-[20px] mt-[20px] font-medium btn_catalog--blue clip_box ">
-                                                <p class="text-center">Перейти в каталог</p>
-                                            </a>
                                             <img class="w-full" src="./src/img/main/main_1.png" alt="" >                                        
                                         </div>
 
-                                        <div class="swiper-slide relative pt-[15px]">
-                                            <a href="" class="text-white rounded-[40px] bg-blue px-[15px] w-[280px] py-[20px] mt-[20px] font-medium btn_catalog--blue clip_box ">
-                                                <p class="text-center">Перейти в каталог</p>
-                                            </a>
+                                        <div class="swiper-slide relative pt-[15px]">  
                                             <img class="w-full" src="./src/img/main/main_1.png" alt="" >                                        
                                         </div>
 
-                                        <div class="swiper-slide relative pt-[15px]">
-                                            <a href="" class="text-white rounded-[40px] bg-blue px-[15px] w-[280px] py-[20px] mt-[20px] font-medium btn_catalog--blue clip_box ">
-                                                <p class="text-center">Перейти в каталог</p>
-                                            </a>
+                                        <div class="swiper-slide relative pt-[15px]">         
                                             <img class="w-full" src="./src/img/main/main_1.png" alt="" >                                        
                                         </div>
                                     </div>
@@ -376,8 +406,8 @@
                         
                     </div>
                 </div>
-            </section> -->
-<!-- 
+            </section> 
+
             <section class="hit-swiper md:pt-[30px] sm:pt-[20px] xs:pt-[20px]">
                 <div class="container">
                     <div class="hit-item overflow-hidden">
@@ -415,9 +445,9 @@
                         </div>
                     </div>
                 </div>
-            </section> -->
+            </section>
 
-            <!-- <section class="md:pt-[60px] sm:pt-[46px] xs:pt-[46px]">
+            <section class="md:pt-[60px] sm:pt-[46px] xs:pt-[46px]">
                 <div class="container">
                     <div class="grid md:grid-cols-4 sm:grid-cols-2 xs:grid-cols-2 gap-[30px]">
                         <div class="bg-white rounded-[30px] min-w-[255] min-h-[172px] flex flex-col items-center justify-center gap-[10px]">
@@ -461,9 +491,9 @@
                      
                     </div>
                 </div>
-            </section> -->
+            </section>
 
-            <!-- <section id="product_p" class="md:pt-[60px] sm:pt-[46px] xs:pt-[46px] product-popular-swiper overflow-hidden ">
+            <section id="product_p" class="md:pt-[60px] sm:pt-[46px] xs:pt-[46px] product-popular-swiper overflow-hidden ">
                 <div class="container product-popular-wrapper overflow-hidden">
                     <h2 class="md:text-[24px] sm:text-[20px] xs:text-[20px] font-medium">Популярный товар</h2>
                     <div class="product_popular-item relative md:pt-[24px] sm:pt-[16px] xs:pt-[16px]">
@@ -525,8 +555,8 @@
 
                    
                 </div>
-            </section> -->
-<!-- 
+            </section>
+
             <section id="cat_p" class="md:pt-[60px] sm:pt-[46px] xs:pt-[46px]">
                 <div class="container">
                     <h2 class="md:text-[24px] sm:text-[20px] xs:text-[20px] font-medium">Популярные категории</h2>
@@ -612,7 +642,7 @@
                       
                     </ul>
                 </div>
-            </section> -->
+            </section>
 
         </main>
 
