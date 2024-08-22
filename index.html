@@ -19,7 +19,7 @@
     <div>
         <header class="z-10 w-full transition-colors pt-[20px] bg-white pb-[20px]"> 
             <div class="container flex gap-[15px] justify-between items-center">
-                <div class="md:hidden sm:flex xs:flex" style="width: inherit;">
+                <div class="md:hidden sm:flex flex" style="width: inherit;">
                     <div> 
                         <div class="btn__menu--mobile items-center gap-10 md:hidden flex">
                             <button class="flex items-center gap-2 pl-10 pr-2 py-1">
@@ -32,14 +32,14 @@
                         </div>
                     </div>
 
-                    <div class="relative md:hidden sm:flex xs:flex items-center justify-between w-full">
+                    <div class="relative md:hidden sm:flex flex items-center justify-between w-full">
                         <input  
                         alt=""
                         placeholder="input search text"
                         class="bg-white p-[8px] rounded-[10px] w-full"
                         style="z-index: 0"
                         >
-                        <svg class="absolute right-[40px] border-r border-light-gray p-[8px]" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class=" right-[20px]" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M17.5 17.5L13.875 13.875" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
@@ -47,20 +47,20 @@
                 </div>
 
                 <div>
-                    <img class="md:block sm:hidden xs:hidden" src="./src/img/main/logo-w.png" alt="logo" />
+                    <img class="md:block sm:hidden hidden" src="./src/img/main/logo-w.png" alt="logo" />
 
                  
 
                 </div>    
                 
-                <div class="md:w-full sm:w-auto xs:w-auto">
-                    <div class="flex md:justify-between sm:justify-end xs:justify-end items-center md:border-b sm:border-b-0 xs:border-0 pb-[11px] border-light-gray" style="border-bottom-style: thin;">
-                        <div class="md:block sm:hidden xs:hidden">
+                <div class="md:w-full w-auto">
+                    <div class="flex md:justify-between justify-end items-center md:border-b border-0 pb-[11px] border-light-gray" style="border-bottom-style: thin;">
+                        <div class="md:block hidden">
                             <span class="text-light-gray"> Магазин тредовых товаров. Доставка по России.  </span>
                         </div>
 
                         <div>
-                            <div class="gap-[20px] md:flex sm:hidden xs:hidden">
+                            <div class="gap-[20px] md:flex  hidden">
                                 <div>
                                     <a href="+79025287888" class="text-[20px] hover:text-blue transition-colors">+7 (902) 528-78-88</a>
                                 </div>
@@ -74,7 +74,7 @@
                         </div>
                     </div>
 
-                    <div class="flex justify-between pt-[23px] md:flex sm:hidden xs:hidden">
+                    <div class="flex justify-between pt-[23px] md:flex hidden">
                         <nav>
                             <ul class="flex gap-[24px]">
                                 <li><a href="" class="font-[18px] hover:text-blue transition-colors"> Главная</a></li>
@@ -169,17 +169,17 @@
         <main>
             <h1 class="visually-hidden">Скрытый заголовок</h1>
 
-            <section class="md:pt-[30px] sm:pt-[6px] xs:pt-[6px]">
+            <section class="md:pt-[30px] pt-[6px]">
                 <div class="container">
                     <div class="flex gap-[10px]">
-                        <div class="relative md:flex sm:hidden xs:hidden items-center justify-between w-full">
+                        <div class="relative md:flex hidden items-center justify-between w-full">
                             <input  
                             alt=""
                             placeholder="input search text"
                             class="bg-white p-[8px] rounded-[10px] w-full"
                             style="z-index: 0"
                             >
-                            <svg class="absolute right-[40px] border-r border-light-gray p-[8px]" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="absolute right-[20px]" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M17.5 17.5L13.875 13.875" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -194,41 +194,58 @@
                 </div>
             </section>
 
-            <section class="md:pt-[60px] sm:pt-[40px] xs:pt-[40px] new-swiper">
+            
+        <section class="md:pt-[60px] pt-[40px]">
                 <div class="container">
-                    <div class="swiper-wrapper new-wrapper">
+                
 
-                        <div class="new-item">
-                            <h2 class="text-black md:text-[38px] text-[20px]">Новинки</h2>
-                            <div class="clip_box top right">
-                                <a href="" class="clip text-white text-center rounded-[40px] bg-blue px-[15px] w-[280px] py-[20px] mt-[20px] font-medium btn_catalog--blue clip_box ">
-                                    <p class="flex justify-center">Перейти в каталог</p>
-                                </a>
-                            </div>
-                            <div class="relative">
-                                <img src="./src/img/main/pc.png" alt="">
-                            </div>
-                           
-                            <p class="font-black md:text-[24px] text-[14px]">Ноутбук FRBBY V16 PRO</p>
-                            <p class="font-black md:text-[24px] text-[14px]">28 550 ₽</p>
+                <div class="gallery-wrapper new-swiper overflow-hidden">
+                    <div class="swiper-wrapper new-wrapper">
+                        <div class="new-slide">
+                                 <div class="new-item">
+                                    <div class="flex items-center justify-between bg-gray">
+                                        <h2 class="text-black md:text-[38px] text-[20px]">Новинки</h2>
+                                        <div class="clip_box top right">
+                                            <a href="" class="clip flex justify-center text-white text-center rounded-[40px] bg-blue px-[15px] md:w-[280px] sm:w-[200px] w-[160px]  py-[20px] mt-[20px] font-medium btn_catalog--blue ">
+                                                <p class="md:text-[16px] text-[14px]">Перейти в каталог</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="relative">
+                                        <img src="./src/img/main/pc.png" alt="">
+                                    </div>
+                                
+                                    <p class="font-black md:text-[24px] text-[14px]">Ноутбук FRBBY V16 PRO</p>
+                                    <p class="font-black md:text-[24px] text-[14px]">28 550 ₽</p>
+                                </div>
                         </div>
-                        
-                        <div class="new-item">
-                            <img src="./src/img/main/bot.png" alt="">
-                            <p class="font-black md:text-[24px] text-[14px]">Робот пылесос Xiaomi Roborock</p>
-                            <p class="font-black md:text-[24px] text-[14px]">63 300 ₽</p>
-                        </div>
-                        
-                        <div class="new-item">
-                            <img src="./src/img/main//thing.png" alt="">
-                            <p class="font-black md:text-[24px] text-[14px]">Проектор Frbby P20PRO Android</p>
-                            <p class="font-black md:text-[24px] text-[14px]">8 400 ₽</p>
-                        </div>
+
+                           <div class="new-slide">
+                               <div class="new-item">
+                                   <img src="./src/img/main/bot.png" alt="">
+                                   <p class="font-black md:text-[24px] text-[14px]">Робот пылесос Xiaomi Roborock</p>
+                                   <p class="font-black md:text-[24px] text-[14px]">63 300 ₽</p>
+                               </div>
+                           </div>
+
+                           <div class="new-slide">
+                                <div class="new-item">
+                                    <img src="./src/img/main//thing.png" alt="">
+                                    <p class="font-black md:text-[24px] text-[14px]">Проектор Frbby P20PRO Android</p>
+                                    <p class="font-black md:text-[24px] text-[14px]">8 400 ₽</p>
+                                </div>
+                           </div>
+                      
+        
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="md:pt-[60px] sm:pt-[40px] xs:pt-[40px] sale-swiper">
+
+
+            <!-- <section class="md:pt-[60px] pt-[40px] sale-swiper">
                 <div class="container">
                     <div id="sale_list" class="flex gap-[30px] min-h-[500px]">
                         
@@ -265,7 +282,7 @@
                                 </div>
 
                                 <div class="clip_box bottom left">
-                                    <a href="" class="clip text-white text-center rounded-[40px] bg-blue px-[15px] w-[280px] py-[20px] mt-[20px] font-medium btn_catalog--blue clip_box ">
+                                    <a href="" class="clip flex justify-center text-white text-center rounded-[40px] bg-blue px-[15px] w-[280px] py-[20px] mt-[20px] font-medium btn_catalog--blue clip_box ">
                                         <p class="flex justify-center">Смотреть все</p>
                                     </a>
                                 </div>
@@ -273,9 +290,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             
-            <section class="md:py-[15px] sm:py-[10px] xs:py-[5px]">
+            <!-- <section class="md:py-[15px] sm:py-[10px] py-[5px]">
                 <div class="container">
                     <div class="flex gap-[27px]">
                         <aside class="min-w-[255px] rounded-[30px] bg-white p-[2px]">
@@ -327,15 +344,15 @@
 
                         <div class="main-swiper max-w-[1100px] ">
                             <div class="main-wrapper overflow-hidden">
-                                <h2 class="text-black md:text-[38px] sm:text-[24px] xs:text-[24px] font-medium">Широкий выбор <span class="text-blue md:text-[38px] sm:text-[24px] xs:text-[24px]">трендовых</span> товаров</h2>
+                                <h2 class="text-black md:text-[38px] text-[24px] font-medium">Широкий выбор <span class="text-blue md:text-[38px] text-[24px]">трендовых</span> товаров</h2>
                                 <span class="text-[16px]">Качество, проверенное временем</span>
                                 <div class="main-item relative">
                                     <div class="swiper-pagination"></div>
 
                                     <div class="absolute">
                                         <div class="clip_box top left">
-                                            <a href="" class="clip text-white rounded-[40px] bg-blue px-[15px] w-[280px] py-[20px] mt-[20px] font-medium btn_catalog--blue clip_box ">
-                                                <p class="text-center">Перейти в каталог</p>
+                                            <a href="" class="clip flex justify-center text-white rounded-[40px] bg-blue px-[15px] w-[280px] py-[20px] mt-[20px] font-medium btn_catalog--blue clip_box ">
+                                                <p>Перейти в каталог</p>
                                             </a>
                                         </div>
                                     </div>
@@ -408,7 +425,7 @@
                 </div>
             </section> 
 
-            <section class="hit-swiper md:pt-[30px] sm:pt-[20px] xs:pt-[20px]">
+            <section class="hit-swiper md:pt-[30px] pt-[20px]">
                 <div class="container">
                     <div class="hit-item overflow-hidden">
                         <div class="swiper-wrapper">
@@ -447,9 +464,9 @@
                 </div>
             </section>
 
-            <section class="md:pt-[60px] sm:pt-[46px] xs:pt-[46px]">
+            <section class="md:pt-[60px] pt-[46px]">
                 <div class="container">
-                    <div class="grid md:grid-cols-4 sm:grid-cols-2 xs:grid-cols-2 gap-[30px]">
+                    <div class="grid md:grid-cols-4 grid-cols-2 gap-[30px]">
                         <div class="bg-white rounded-[30px] min-w-[255] min-h-[172px] flex flex-col items-center justify-center gap-[10px]">
                             <svg width="100.000000" height="60.000000" viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <defs/>
@@ -493,15 +510,15 @@
                 </div>
             </section>
 
-            <section id="product_p" class="md:pt-[60px] sm:pt-[46px] xs:pt-[46px] product-popular-swiper overflow-hidden ">
+            <section id="product_p" class="md:pt-[60px] pt-[46px] product-popular-swiper overflow-hidden ">
                 <div class="container product-popular-wrapper overflow-hidden">
-                    <h2 class="md:text-[24px] sm:text-[20px] xs:text-[20px] font-medium">Популярный товар</h2>
-                    <div class="product_popular-item relative md:pt-[24px] sm:pt-[16px] xs:pt-[16px]">
-                        <div class="swiper-wrapper md:p-[20px] sm:p-[0px] xs:p-[0px] relative">
+                    <h2 class="md:text-[24px] text-[20px] font-medium">Популярный товар</h2>
+                    <div class="product_popular-item relative md:pt-[24px] pt-[16px]">
+                        <div class="swiper-wrapper md:p-[20px] p-[0px] relative">
                             <div class="swiper-slide rounded-[30px]">
                                 <div class="bg-white rounded-[30px] p-[15px] min-h-[440px]">
                                     <img src="./src/img/main/product_p_1.png" alt="">
-                                    <p class="text-black font-bold md:mt-[41px] sm:mt-[16px] xs:mt-[15px]">19 000 Р</p>
+                                    <p class="text-black font-bold md:mt-[41px] sm:mt-[16px] mt-[15px]">19 000 Р</p>
                                     <p class="text-black pt-[8px] font-medium">Видео проектор Aspect, Android 9.0, WIFI, домашний, кинотеатр</p>
                                 </div>
                             </div>
@@ -509,7 +526,7 @@
                             <div class="swiper-slide rounded-[30px]">
                                 <div class="bg-white rounded-[30px] p-[15px] min-h-[440px]">
                                     <img src="./src/img/main/product_p_1.png" alt="">
-                                    <p class="text-black font-bold md:mt-[41px] sm:mt-[16px] xs:mt-[15px]">19 000 Р</p>
+                                    <p class="text-black font-bold md:mt-[41px] sm:mt-[16px] mt-[15px]">19 000 Р</p>
                                     <p class="text-black pt-[8px] font-medium">Видео проектор Aspect, Android 9.0, WIFI, домашний, кинотеатр</p>
                                 </div>
                             </div>
@@ -517,7 +534,7 @@
                             <div class="swiper-slide rounded-[30px]">
                                 <div class="bg-white rounded-[30px] p-[15px] min-h-[440px]">
                                     <img src="./src/img/main/product_p_1.png" alt="">
-                                    <p class="text-black font-bold md:mt-[41px] sm:mt-[16px] xs:mt-[15px]">19 000 Р</p>
+                                    <p class="text-black font-bold md:mt-[41px] sm:mt-[16px] mt-[15px]">19 000 Р</p>
                                     <p class="text-black pt-[8px] font-medium">Видео проектор Aspect, Android 9.0, WIFI, домашний, кинотеатр</p>
                                 </div>
                             </div>
@@ -525,7 +542,7 @@
                             <div class="swiper-slide rounded-[30px]">
                                 <div class="bg-white rounded-[30px] p-[15px] min-h-[440px]">
                                     <img src="./src/img/main/product_p_1.png" alt="">
-                                    <p class="text-black font-bold md:mt-[41px] sm:mt-[16px] xs:mt-[15px]">19 000 Р</p>
+                                    <p class="text-black font-bold md:mt-[41px] sm:mt-[16px] mt-[15px]">19 000 Р</p>
                                     <p class="text-black pt-[8px] font-medium">Видео проектор Aspect, Android 9.0, WIFI, домашний, кинотеатр</p>
                                 </div>
                             </div>
@@ -533,7 +550,7 @@
                             <div class="swiper-slide rounded-[30px]">
                                 <div class="bg-white rounded-[30px] p-[15px] min-h-[440px]">
                                     <img src="./src/img/main/product_p_1.png" alt="">
-                                    <p class="text-black font-bold md:mt-[41px] sm:mt-[16px] xs:mt-[15px]">19 000 Р</p>
+                                    <p class="text-black font-bold md:mt-[41px] sm:mt-[16px] mt-[15px]">19 000 Р</p>
                                     <p class="text-black pt-[8px] font-medium">Видео проектор Aspect, Android 9.0, WIFI, домашний, кинотеатр</p>
                                 </div>
                             </div>
@@ -557,16 +574,16 @@
                 </div>
             </section>
 
-            <section id="cat_p" class="md:pt-[60px] sm:pt-[46px] xs:pt-[46px]">
+            <section id="cat_p" class="md:pt-[60px] pt-[46px]">
                 <div class="container">
-                    <h2 class="md:text-[24px] sm:text-[20px] xs:text-[20px] font-medium">Популярные категории</h2>
-                    <ul class="grid md:grid-cols-4 sm:grid-cols-2 xs:grid-cols-2 gap-[30px] md:pt-[24px] sm:pt-[16px] xs:pt-[16px]">
+                    <h2 class="md:text-[24px] text-[20px] font-medium">Популярные категории</h2>
+                    <ul class="grid md:grid-cols-4 grid-cols-2 gap-[30px] md:pt-[24px] pt-[16px]">
                         <li>
                             <a href="">
                                 <div class="bg-white rounded-[17px] min-h-[190px] p-[20px]">
                                     <img class="object-contain w-full" src="./src/img/main/cat_p_1.png" alt="">
                                 </div>
-                                <p class="pt-[12px] text-black md:text-[16px] sm:text-[14px] xs:text-[14px] font-medium">Butovaya technila</p>
+                                <p class="pt-[12px] text-black md:text-[16px] text-[14px] font-medium">Butovaya technila</p>
                             </a>
                         </li>
 
@@ -575,17 +592,7 @@
                                 <div class="bg-white rounded-[17px] min-h-[190px] p-[20px]">
                                     <img class="object-contain w-full" src="./src/img/main/cat_p_1.png" alt="">
                                 </div>
-                                <p class="pt-[12px] text-black md:text-[16px] sm:text-[14px] xs:text-[14px] font-medium">Butovaya technila</p>
-                            </a>
-                        </li>
-                      
-
-                        <li>
-                            <a href="">
-                                <div class="bg-white rounded-[17px] min-h-[190px] p-[20px]">
-                                    <img class="object-contain w-full" src="./src/img/main/cat_p_1.png" alt="">
-                                </div>
-                                <p class="pt-[12px] text-black md:text-[16px] sm:text-[14px] xs:text-[14px] font-medium">Butovaya technila</p>
+                                <p class="pt-[12px] text-black md:text-[16px] text-[14px] font-medium">Butovaya technila</p>
                             </a>
                         </li>
                       
@@ -595,7 +602,7 @@
                                 <div class="bg-white rounded-[17px] min-h-[190px] p-[20px]">
                                     <img class="object-contain w-full" src="./src/img/main/cat_p_1.png" alt="">
                                 </div>
-                                <p class="pt-[12px] text-black md:text-[16px] sm:text-[14px] xs:text-[14px] font-medium">Butovaya technila</p>
+                                <p class="pt-[12px] text-black md:text-[16px] text-[14px] font-medium">Butovaya technila</p>
                             </a>
                         </li>
                       
@@ -605,7 +612,7 @@
                                 <div class="bg-white rounded-[17px] min-h-[190px] p-[20px]">
                                     <img class="object-contain w-full" src="./src/img/main/cat_p_1.png" alt="">
                                 </div>
-                                <p class="pt-[12px] text-black md:text-[16px] sm:text-[14px] xs:text-[14px] font-medium">Butovaya technila</p>
+                                <p class="pt-[12px] text-black md:text-[16px] text-[14px] font-medium">Butovaya technila</p>
                             </a>
                         </li>
                       
@@ -615,7 +622,7 @@
                                 <div class="bg-white rounded-[17px] min-h-[190px] p-[20px]">
                                     <img class="object-contain w-full" src="./src/img/main/cat_p_1.png" alt="">
                                 </div>
-                                <p class="pt-[12px] text-black md:text-[16px] sm:text-[14px] xs:text-[14px] font-medium">Butovaya technila</p>
+                                <p class="pt-[12px] text-black md:text-[16px] text-[14px] font-medium">Butovaya technila</p>
                             </a>
                         </li>
                       
@@ -625,7 +632,7 @@
                                 <div class="bg-white rounded-[17px] min-h-[190px] p-[20px]">
                                     <img class="object-contain w-full" src="./src/img/main/cat_p_1.png" alt="">
                                 </div>
-                                <p class="pt-[12px] text-black md:text-[16px] sm:text-[14px] xs:text-[14px] font-medium">Butovaya technila</p>
+                                <p class="pt-[12px] text-black md:text-[16px] text-[14px] font-medium">Butovaya technila</p>
                             </a>
                         </li>
                       
@@ -635,20 +642,31 @@
                                 <div class="bg-white rounded-[17px] min-h-[190px] p-[20px]">
                                     <img class="object-contain w-full" src="./src/img/main/cat_p_1.png" alt="">
                                 </div>
-                                <p class="pt-[12px] text-black md:text-[16px] sm:text-[14px] xs:text-[14px] font-medium">Butovaya technila</p>
+                                <p class="pt-[12px] text-black md:text-[16px] text-[14px] font-medium">Butovaya technila</p>
+                            </a>
+                        </li>
+                      
+
+                        <li>
+                            <a href="">
+                                <div class="bg-white rounded-[17px] min-h-[190px] p-[20px]">
+                                    <img class="object-contain w-full" src="./src/img/main/cat_p_1.png" alt="">
+                                </div>
+                                <p class="pt-[12px] text-black md:text-[16px]
+                                text-[14px] font-medium">Butovaya technila</p>
                             </a>
                         </li>
                       
                       
                     </ul>
                 </div>
-            </section>
+            </section> -->
 
         </main>
 
-        <footer class="footer page-section-3 bg-gray md:pt-[40px] sm:pt-[20px] xs:pt-[18px] md:mt-[40px] sm:mt-[20px] xs:mt-[18px]">
+        <footer class="footer page-section-3 bg-gray md:pt-[40px] sm:pt-[20px] pt-[18px] md:mt-[40px] sm:mt-[20px] mt-[18px]">
             <div class="container">
-                <div class="flex md:flex-row sm:flex-col xs:flex-col text-dark-gray text-[16px]">
+                <div class="flex md:flex-row sm:flex-col flex-col text-dark-gray text-[16px]">
                     <div class="p-[10px] md:min-h-[217px] sm:min-h-[120px] min-w-[300px]">
                         <img src="./src/img/icons/logo_f.png" alt="">
                     </div>
