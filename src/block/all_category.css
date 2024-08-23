@@ -52,3 +52,10 @@
     grid-row-end: span 2;
     background-color: initial !important;
 }
+
+
+@media screen and (max-width:480px) {
+    #all_cats div {
+        display: flex;
+    }
+}

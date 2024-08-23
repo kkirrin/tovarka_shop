@@ -1,7 +1,7 @@
 .clip_box {
     --bgc: #F5F5F5;
-    --border-radius: 34px;
-    --margin-horizontal: 10px;
+    --border-radius: 60px;
+    --margin-horizontal: 25px;
     --margin-vertical: 20px;
     position: absolute;
     background-color: var(--bgc);
@@ -118,77 +118,25 @@
     margin-left: var(--margin-vertical);
 }
 
-
-.popular-wrapper .clip_box {
-    --border-radius: 15px;
-    --margin-vertical: 25px;
+.clip_box.bottom.circle .clip {
+    margin-bottom: var(--margin-vertical);
 }
 
-#auc .clip_box {
-    --border-radius: 25px;
-    --margin-horizontal: 15px;
-    --margin-vertical: 30px;
-}
-
-#auc .clip_box.left {
-    left: 19px;
-}
-
-.clip_box.date {
-    position: absolute;
-    bottom: 20px;
-}
-
-.clip_box.date::after,
-.clip__box.date::before {
-    content: '';
-    background-color: var(--blue);
-    display: block;
-    position: absolute;
-    z-index: 5;
-    width: var(--border-radius);
-    height: calc(var(--border-radius) / 2);
-    background-color: transparent;
-}
-
-#socials .clip_box {
-    --border-radius: 40px;
-    --margin-horizontal: 40px;
-    --margin-vertical: 40px;
-}
-
-.btn__menu--mobile.clip {
-    display: none;
-}
 
 @media screen and (max-width: 480px) {
     .clip_box {
         --bgc: #F5F5F5;
-        --border-radius: 18px;
-        --margin-horizontal: 5px;
+        --border-radius: 60px;
+        --margin-horizontal: 10px;
         --margin-vertical: 20px;
     }
-    .btn__menu--mobile.clip {
-        display: block;
-        box-sizing: border-box;
-        /* Blue */
-        border: 1px solid var(--blue);
-        border-radius: 10px;
-    }
 }
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 4px) {
     .clip_box {
         --bgc: #F5F5F5;
         --border-radius: 15px;
         --margin-horizontal: 1px;
         --margin-vertical: 1px;
-    }
-    .btn__menu--mobile.clip {
-        display: block;
-        box-sizing: border-box;
-        /* Blue */
-        border: 1px solid var(--blue);
-        border-radius: 10px;
     }
 }
 
@@ -199,11 +147,4 @@
         --margin-horizontal: 5px;
         --margin-vertical: 15px;
     }
-    .btn__menu--mobile.clip {
-        display: block;
-        box-sizing: border-box;
-        /* Blue */
-        border: 1px solid var(--blue);
-        border-radius: 10px;
-    }
-}
+} */
