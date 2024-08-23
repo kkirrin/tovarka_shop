@@ -205,3 +205,60 @@ export const initNewSlider = () => {
         breakpointChecker();
     }
 }
+
+export const initSaleSlider = () => {
+    // слайдер "сертификаты"
+    const exclusiveSlider = document.querySelector('.sale-swiper');
+
+    if (exclusiveSlider) {
+        const sliderItems = document.querySelectorAll('.sale-item--small');
+        console.log(window.innerWidth)
+        if (window.innerWidth < 769 ) {
+            console.log('f')
+            sliderItems.forEach((slide) => {
+                slide.classList.add('swiper-slide');
+            });
+
+            console.log('количество items', sliderItems);
+        }
+
+        let breakpoint = window.matchMedia('(min-width:1023px)');
+        let swiper;
+
+        const breakpointChecker = function () {
+            if (breakpoint.matches === true) {
+
+                if (swiper !== undefined) {
+                    swiper.destroy(true, true);
+                } return;
+
+            } else if (breakpoint.matches === false) {
+                // eslint-disable-next-line consistent-return
+                return exclusiveSliderInit();
+            }
+        };
+
+        const exclusiveSliderInit = function () {
+            swiper = new Swiper(exclusiveSlider, {
+                // loop: true,
+                init: true,
+                slidesPerView: 1,
+                breakpoints: {
+                    480: {
+                        slidesPerView: 1,
+                    },
+
+                },
+                 pagination: {
+                        el: '.swiper-pagination',
+                        type: 'bullets',
+                      },
+                
+
+            });
+        };
+
+        breakpoint.addEventListener('change', breakpointChecker);
+        breakpointChecker();
+    }
+}

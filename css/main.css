@@ -428,6 +428,12 @@
 
 /* Секция Популярные категории */
 
+:root {
+  --box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  --webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  --moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
 #cat_p li div{
   transition: all 0.6s ease-in-out;
 }
@@ -445,7 +451,7 @@
 }
 
 #cat_p li:hover div{
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  box-shadow: var(--moz-box-shadow);
 }
 
 #cat_p li:hover img {
@@ -464,13 +470,31 @@
 }
 
 #product_p .product_popular-item .swiper-slide:hover div{
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  box-shadow: var(--moz-box-shadow);
 }
 
 /* Анимация кнопок каталога */
 
 .btn_catalog--blue {
   transition: all 0.6s ease-in-out;
+}
+
+.popular-slider__btns {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.6s ease-in-out;
+  opacity: 0;
+}
+
+.popular-slider__btns button {
+  box-shadow: var(--moz-box-shadow);
+}
+
+.product_popular-item:hover .popular-slider__btns {
+  display: flex;
+  opacity: 1;
 }
 
 .clip_box {
@@ -680,7 +704,6 @@
 @media screen and (max-width:480px) {
   #all_cats div {
     display: flex;
-    flex-direction: row;
   }
 }
 
@@ -1353,14 +1376,6 @@ body {
   top: -0px;
 }
 
-.-top-\[46\%\]{
-  top: -46%;
-}
-
-.right-0{
-  right: 0px;
-}
-
 .right-\[160px\]{
   right: 160px;
 }
@@ -1375,6 +1390,10 @@ body {
 
 .top-0{
   top: 0px;
+}
+
+.top-\[30px\]{
+  top: 30px;
 }
 
 .z-10{
@@ -1397,6 +1416,10 @@ body {
   margin-top: 60px;
 }
 
+.block{
+  display: block;
+}
+
 .flex{
   display: flex;
 }
@@ -1411,6 +1434,18 @@ body {
 
 .h-3{
   height: 0.75rem;
+}
+
+.h-\[380px\]{
+  height: 380px;
+}
+
+.max-h-\[110px\]{
+  max-height: 110px;
+}
+
+.max-h-\[600px\]{
+  max-height: 600px;
 }
 
 .min-h-\[140px\]{
@@ -1429,10 +1464,6 @@ body {
   min-height: 440px;
 }
 
-.min-h-\[500px\]{
-  min-height: 500px;
-}
-
 .w-3{
   width: 0.75rem;
 }
@@ -1445,8 +1476,16 @@ body {
   width: 20px;
 }
 
+.w-\[255px\]{
+  width: 255px;
+}
+
 .w-\[280px\]{
   width: 280px;
+}
+
+.w-\[40\%\]{
+  width: 40%;
 }
 
 .w-auto{
@@ -1457,12 +1496,16 @@ body {
   width: 100%;
 }
 
-.min-w-\[255\]{
-  min-width: 255;
+.w-\[2\\60px\]{
+  width: 2\60px;
 }
 
-.min-w-\[255px\]{
-  min-width: 255px;
+.w-\[60px\]{
+  width: 60px;
+}
+
+.min-w-\[255\]{
+  min-width: 255;
 }
 
 .min-w-\[300px\]{
@@ -1473,8 +1516,32 @@ body {
   max-width: 1100px;
 }
 
+.max-w-\[110px\]{
+  max-width: 110px;
+}
+
 .max-w-\[700px\]{
   max-width: 700px;
+}
+
+.max-w-full{
+  max-width: 100%;
+}
+
+.max-w-max{
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.max-w-fit{
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.scale-75{
+  --tw-scale-x: .75;
+  --tw-scale-y: .75;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .scale-90{
@@ -1660,9 +1727,9 @@ body {
   padding-bottom: 36px;
 }
 
-.py-\[5px\]{
-  padding-top: 5px;
-  padding-bottom: 5px;
+.py-\[15px\]{
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .pb-7{
@@ -1759,10 +1826,6 @@ body {
 
 .pt-\[40px\]{
   padding-top: 40px;
-}
-
-.pt-\[46px\]{
-  padding-top: 46px;
 }
 
 .pt-\[6px\]{
@@ -2125,11 +2188,6 @@ input:focus {
     border-bottom-width: 0px;
   }
 
-  .sm\:py-\[10px\]{
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
   .sm\:pt-\[20px\]{
     padding-top: 20px;
   }
@@ -2176,6 +2234,16 @@ input:focus {
     width: 100%;
   }
 
+  .md\:max-w-\[1100px\]{
+    max-width: 1100px;
+  }
+
+  .md\:scale-100{
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .md\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -2194,11 +2262,6 @@ input:focus {
 
   .md\:p-\[20px\]{
     padding: 20px;
-  }
-
-  .md\:py-\[15px\]{
-    padding-top: 15px;
-    padding-bottom: 15px;
   }
 
   .md\:py-\[50px\]{
@@ -2245,9 +2308,5 @@ input:focus {
 
   .md\:text-\[38px\]{
     font-size: 38px;
-  }
-
-  .md\:text-\[46px\]{
-    font-size: 46px;
   }
 }

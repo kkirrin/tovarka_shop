@@ -57,6 +57,5 @@
 @media screen and (max-width:480px) {
     #all_cats div {
         display: flex;
-        flex-direction: row;
     }
 }
