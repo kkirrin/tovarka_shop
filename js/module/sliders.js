@@ -262,3 +262,37 @@ export const initSaleSlider = () => {
         breakpointChecker();
     }
 }
+
+
+
+export const initAllCategorySwiper = () => {
+    const item = document.querySelector('.category-item');
+    let swiper;
+    if (item) {
+        
+        swiper = new Swiper(item, {
+           
+            speed: 3000,
+            direction: 'horizontal',
+            spaceBetween: 30,
+            slidesPerView: 1,
+            equalHeight: true,
+
+            // If we need pagination
+            navigation: {
+                nextEl: ".product-popular-next",
+                prevEl: ".product-popular-prev",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 3,
+                    spaceBetween: 15
+                },
+                480: {
+                    slidesPerView: 3,
+                    spaceBetween: 15
+                }
+                }
+        });
+    }
+}

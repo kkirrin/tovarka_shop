@@ -54,8 +54,31 @@
 }
 
 
+.all_cats--second {
+    display: flex;
+}
+
+
+.all_cats--second .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px !important;
+    height: 90px !important;
+    border: 2px solid var(--blue);
+    border-radius: 100%;
+}
+
+.all_cats--second .swiper-slide img {
+    width: 70px;
+    height: 30px;
+    object-fit: cover;
+}
+
+
+
 @media screen and (max-width:480px) {
-    #all_cats div {
-        display: flex;
+    #all_cats {
+        display: none;
     }
 }

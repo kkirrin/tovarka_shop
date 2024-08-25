@@ -197,12 +197,51 @@
             <section class="md:pt-[60px] pt-[40px]">
                 <div class="container">
                     <div class="flex gap-[27px]">
-                        <aside class="md:block hidden min-w-[300px] rounded-[30px] bg-white p-[2px]">
+                        <aside id="category_aside" class="min-w-[300px] rounded-[30px] bg-white p-[2px]">
                             <nav>
                                 <ul class="text-black sub-menu">
                                     <li class="pt-[14px] pl-[25px] pb-[14px] flex gap-[10px]">
                                         <img src="./src/img/icons/auto.svg" alt="auto">
                                         <a href="" class="">Авто</a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#" class="">
+                                                    <img src="./src/img/main/cat_p_1.png" alt="cat">
+                                                    <p>
+                                                        Category 1
+                                                    </p>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="">
+                                                    <img src="./src/img/main/cat_p_1.png" alt="cat">
+                                                    <p>
+                                                        Category 1
+                                                    </p>
+                                                </a>
+                                            </li>
+
+
+                                            <li>
+                                                <a href="#" class="">
+                                                    <img src="./src/img/main/cat_p_1.png" alt="cat">
+                                                    <p>
+                                                        Category 1
+                                                    </p>
+                                                </a>
+                                            </li>
+
+
+                                            <li>
+                                                <a href="#" class="">
+                                                    <img src="./src/img/main/cat_p_1.png" alt="cat">
+                                                    <p>
+                                                        Category 1
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li class="pt-[14px] pl-[25px] pb-[14px] flex gap-[10px]">
                                         <img src="./src/img/icons/auto.svg" alt="auto">
@@ -281,15 +320,14 @@
                                 <h2 class="text-black md:text-[38px] text-[24px] font-medium">Широкий выбор <span class="text-blue md:text-[38px] text-[24px]">трендовых</span> товаров</h2>
                                 <span class="text-[16px]">Качество, проверенное временем</span>
                                 <div class="main-item relative">
-                                    <div class="swiper-pagination"></div>
                                     
-                                    <div class="md:block hidden" style="z-index: 1000;">
+                                    <div class="md:block hidden absolute" style="z-index: 1000;">
                                         <a href="" class=" flex justify-center text-white rounded-[40px] bg-blue px-[15px] w-[280px] py-[20px] mt-[20px] font-medium btn_catalog--blue clip_box ">
                                             <p>Перейти в каталог</p>
                                         </a>
                                     </div>
 
-                                     <div style="z-index: 1000;">
+                                     <div class="md:hidden block absolute" style="z-index: 1000;">
                                         <button href="" class=" flex justify-center text-white rounded-[40px] bg-blue px-[15px] w-[160px] py-[15px] mt-[20px] font-medium btn_catalog--blue clip_box ">
                                             <p>Каталог</p>
                                         </button>
@@ -298,21 +336,22 @@
                                     <div class="swiper-wrapper relative">
                                         <div class="swiper-slide relative pt-[15px]">
                                             <img class="md:block hidden w-full" src="./src/img/main/main_1.png" alt="" >     
-                                            <img class="md:hidden block" style="width: -webkit-fill-available;" src="./src/img/main/trand_s.png" alt="">                            
+                                            <img class="md:hidden block" style="width: 100%;" src="./src/img/main/trand_s.png" alt="">                            
                                         </div>
                                         <div class="swiper-slide relative pt-[15px]">
                                             <img class="md:block hidden w-full" src="./src/img/main/main_1.png" alt="" >     
-                                            <img class="md:hidden block" style="width: -webkit-fill-available;" src="./src/img/main/trand_s.png" alt="">                            
+                                            <img class="md:hidden block" style="width: 100%;" src="./src/img/main/trand_s.png" alt="">                            
                                         </div>
                                         <div class="swiper-slide relative pt-[15px]">
                                             <img class="md:block hidden w-full" src="./src/img/main/main_1.png" alt="" >     
-                                            <img class="md:hidden block" style="width: -webkit-fill-available;" src="./src/img/main/trand_s.png" alt="">                            
+                                            <img class="md:hidden block" style="width: 100%;" src="./src/img/main/trand_s.png" alt="">                            
                                         </div>
                                     </div>
+                                    <div class="swiper-pagination"></div>
                                 </div>
                             </div>
 
-                            <!-- <div id="all_cats" class="all_cats">
+                            <div id="all_cats" class="all_cats">
                                 <div style="background-image: url('./src/img/main/all_cat.png'); background-repeat: no-repeat; background-size: cover;">
                                     <p>Все бренды в <br> одном месте </p>
                                     
@@ -353,24 +392,37 @@
                                 <div>
                                     <img  src="./src/img/main/yandex.png" alt="all_cats">    
                                 </div>
-                            </div> -->
+                            </div>
                         </div>
                         
                     </div>
                 </div>
             </section> 
                 
-            <!-- <section class="md:pt-[60px] pt-[40px]">
+            <section class="md:pt-[60px] pt-[40px]">
                     <div class="container">
                     
 
-                    <div class="gallery-wrapper new-swiper overflow-hidden">
+                    <div class="gallery-wrapper new-swiper overflow-hidden relative">
+                        <div class="md:hidden flex justify-between items-center bg-gray relative h-[100px]">
+                            <div class="pt-[30px] pl-[20px] rounded-[20px]">
+                                <h2 class=" text-black md:text-[38px] text-[20px]">Новинки</h2>
+                            </div>
+                            
+                            <div class="clip_box top right">
+                                <a href="" class="clip flex justify-center text-white text-center rounded-[40px] bg-blue px-[15px] md:w-[280px] sm:w-[200px] w-[160px]  py-[20px] mt-[20px] font-medium btn_catalog--blue ">
+                                    <p class="md:text-[16px] text-[14px]">Перейти в каталог</p>
+                                </a>
+                            </div>    
+                        </div>
                         <div class="swiper-wrapper new-wrapper">
+
+
                             <div class="new-slide">
-                                    <div class="new-item">
+                                    <div class="new-item"> 
                                         <div class="flex items-center justify-between bg-gray">
-                                            <h2 class="text-black md:text-[38px] text-[20px]">Новинки</h2>
-                                            <div class="clip_box top right">
+                                            <h2 class="md:block hidden text-black md:text-[38px] text-[20px]">Новинки</h2>
+                                            <div class="md:block hidden clip_box top right">
                                                 <a href="" class="clip flex justify-center text-white text-center rounded-[40px] bg-blue px-[15px] md:w-[280px] sm:w-[200px] w-[160px]  py-[20px] mt-[20px] font-medium btn_catalog--blue ">
                                                     <p class="md:text-[16px] text-[14px]">Перейти в каталог</p>
                                                 </a>
@@ -407,6 +459,51 @@
                     </div>
                 </div>
             </section>
+
+            <section class="md:hidden block pt-[40px]">
+                <div class="container relative overflow-hidden">
+                    <h3 class="font-medium text-[16px] py-[20px]">Все бренды в одном месте </h3>
+                    <div id="all_cats--second" class="all_cats all_cats--second">
+                        <div class="category-swiper overflow-hidden">
+                            <div class="category-item">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img  src="./src/img/main/dyson.png" alt="all_cats">    
+                                    </div>
+                                    
+                                    <div class="swiper-slide">
+                                        <img  src="./src/img/main/inkbird.png" alt="all_cats">    
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img  src="./src/img/main/tmakota.png" alt="all_cats">    
+                                    </div>
+                                    
+                                    <div class="swiper-slide">
+                                        <img  src="./src/img/main/umiio.png" alt="all_cats">    
+                                    </div>
+                                    
+                                    <div class="swiper-slide">
+                                        <img  src="./src/img/main/dewalt.png" alt="all_cats">    
+                                    </div>
+                        
+                                    <div class="swiper-slide">
+                                        <img  src="./src/img/main/frrby.png" alt="all_cats">    
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img  src="./src/img/main/xiomi.png" alt="all_cats">    
+                                    </div>
+                        
+                                    <div class="swiper-slide">
+                                        <img  src="./src/img/main/yandex.png" alt="all_cats">    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             
             <section class="hit-swiper md:pt-[60px] pt-[40px]">
                 <div class="container">
@@ -414,21 +511,21 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img class="md:flex hidden absolute top-0 right-[160px]" src="./src/img/main/hit_btn.png" alt="">
-                                <img class="md:flex hidden mt-[60px]" style="width: -webkit-fill-available;" src="./src/img/main/hit.png" alt="sale">
+                                <img class="md:flex hidden mt-[60px]" style="width: 100%;" src="./src/img/main/hit.png" alt="sale">
 
                                 <img class="md:hidden block absolute top-[30px] right-[40px]" src="./src/img/main/hit_btn_s.png" alt="">
                                 <img class="md:hidden block mt-[60px]" style="width: inherit;"  src="./src/img/main/hit_s.png" alt="sale">
                             </div> 
                             <div class="swiper-slide">
                                 <img class="md:flex hidden absolute top-0 right-[160px]" src="./src/img/main/hit_btn.png" alt="">
-                                <img class="md:flex hidden mt-[60px]" style="width: -webkit-fill-available;" src="./src/img/main/hit.png" alt="sale">
+                                <img class="md:flex hidden mt-[60px]" style="width: 100%;" src="./src/img/main/hit.png" alt="sale">
 
                                 <img class="md:hidden block absolute top-[30px] right-[40px]" src="./src/img/main/hit_btn_s.png" alt="">
                                 <img class="md:hidden block mt-[60px]" style="width: inherit;"  src="./src/img/main/hit_s.png" alt="sale">
                             </div> 
                             <div class="swiper-slide">
                                 <img class="md:flex hidden absolute top-0 right-[160px]" src="./src/img/main/hit_btn.png" alt="">
-                                <img class="md:flex hidden mt-[60px]" style="width: -webkit-fill-available;" src="./src/img/main/hit.png" alt="sale">
+                                <img class="md:flex hidden mt-[60px]" style="width: 100%;" src="./src/img/main/hit.png" alt="sale">
 
                                 <img class="md:hidden block absolute top-[30px] right-[40px]" src="./src/img/main/hit_btn_s.png" alt="">
                                 <img class="md:hidden block mt-[60px]" style="width: inherit;"  src="./src/img/main/hit_s.png" alt="sale">
@@ -439,6 +536,8 @@
                 </div>
             </section>
 
+
+            
             <section class="md:pt-[60px] pt-[40px]">
                 <div class="container">
                     <div class="grid md:grid-cols-4 grid-cols-2 gap-[30px]">
@@ -447,7 +546,7 @@
                                 <defs/>
                                 <path id="Vector" d="M51.6 20C51.16 20.01 50.75 20.19 50.44 20.5L41.64 29.27L36.23 23.87C34.71 22.29 32.26 24.73 33.85 26.24L40.46 32.84C41.11 33.49 42.18 33.49 42.84 32.84L52.82 22.88C53.92 21.81 53.11 20 51.6 20L51.6 20ZM1.66 33.33L11.66 33.33C12.59 33.33 13.33 34.07 13.33 35C13.33 35.92 12.59 36.66 11.66 36.66L1.66 36.66C0.74 36.66 0 35.92 0 35C0 34.07 0.74 33.33 1.66 33.33ZM1.66 20L11.66 20C12.59 20 13.33 20.74 13.33 21.66C13.33 22.59 12.59 23.33 11.66 23.33L1.66 23.33C0.74 23.33 0 22.59 0 21.66C0 20.74 0.74 20 1.66 20ZM1.66 6.66L11.66 6.66C12.59 6.66 13.33 7.41 13.33 8.33C13.33 9.25 12.59 10 11.66 10L1.66 10C0.74 10 0 9.25 0 8.33C0 7.41 0.74 6.66 1.66 6.66ZM81.66 43.33C77.08 43.33 73.33 47.08 73.33 51.66C73.33 56.25 77.08 60 81.66 60C86.25 60 90 56.25 90 51.66C90 47.08 86.25 43.33 81.66 43.33ZM81.66 46.66C84.44 46.66 86.66 48.88 86.66 51.66C86.66 54.44 84.44 56.66 81.66 56.66C78.88 56.66 76.66 54.44 76.66 51.66C76.66 48.88 78.88 46.66 81.66 46.66ZM38.33 43.33C33.75 43.33 30 47.08 30 51.66C30 56.25 33.75 60 38.33 60C42.91 60 46.66 56.25 46.66 51.66C46.66 47.08 42.91 43.33 38.33 43.33ZM38.33 46.66C41.11 46.66 43.33 48.88 43.33 51.66C43.33 54.44 41.11 56.66 38.33 56.66C35.55 56.66 33.33 54.44 33.33 51.66C33.33 48.88 35.55 46.66 38.33 46.66ZM21.66 0C18.92 0 16.66 2.26 16.66 5L16.66 41.66C16.66 44.4 18.92 46.66 21.66 46.66L28.33 46.66C30.58 46.7 30.58 43.3 28.33 43.33L21.66 43.33C20.71 43.33 20 42.62 20 41.66L20 5C20 4.04 20.71 3.33 21.66 3.33L65 3.33C65.95 3.33 66.66 4.04 66.66 5L66.66 43.33L48.33 43.33C46.13 43.33 46.17 46.7 48.33 46.66L71.66 46.66C73.86 46.66 73.84 43.33 71.66 43.33L70 43.33L70 13.33L84.09 13.33L96.66 32.98L96.66 41.66C96.66 42.62 95.95 43.33 95 43.33L91.66 43.33C89.48 43.33 89.48 46.66 91.66 46.66L95 46.66C97.74 46.66 100 44.4 100 41.66L100 32.5C100 32.18 99.9 31.86 99.74 31.6L86.4 10.76C86.1 10.29 85.57 10 85 10L70 10L70 5C70 2.26 67.74 0 65 0L21.66 0Z" fill="#3B8ED7" fill-opacity="1.000000" fill-rule="nonzero"/>
                             </svg>
-                            <p class="font-medium text-black text-[16px] text-center">Доставка в любой город <br> России</p>
+                            <p class="font-medium text-black md:text-[16px] text-[12px] text-center">Доставка в любой город <br> России</p>
                         </div>
 
                         <div class="bg-white rounded-[30px] min-w-[255] min-h-[172px] flex flex-col items-center justify-center gap-[10px]">
@@ -457,7 +556,7 @@
                                 <circle id="Ellipse 365" cx="35.000000" cy="35.000000" r="33.500000" stroke="#3B8ED7" stroke-opacity="1.000000" stroke-width="3.000000"/>
                             </svg>
                             
-                            <p class="font-medium text-black text-[16px] text-center">Доставка в течение 1 часа по Владивостоку</p>
+                            <p class="font-medium text-black md:text-[16px] text-[12px] text-center">Доставка в течение <br>1 часа по Владивостоку</p>
                         </div>
 
                         <div class="bg-white rounded-[30px] min-w-[255] min-h-[172px] flex flex-col items-center justify-center gap-[10px]">
@@ -466,7 +565,7 @@
                                 <path d="M46.7595 25.2339C46.7595 25.2151 46.7595 25.1962 46.7406 25.1962C46.7406 25.1585 46.7217 25.1396 46.7217 25.1019C46.7217 25.083 46.7028 25.0452 46.7028 25.0264C46.7028 25.0075 46.6839 24.9886 46.6839 24.9698C46.6461 24.8754 46.6083 24.7999 46.5516 24.7245L40.5438 15.9127C40.2793 15.5165 39.8447 15.29 39.3724 15.29H24.1449C23.6726 15.29 23.2381 15.5165 22.9736 15.9127L16.9657 24.7056C16.909 24.7811 16.8712 24.8754 16.8335 24.9509C16.8335 24.9698 16.8146 24.9886 16.8146 25.0075C16.7957 25.0264 16.7957 25.0641 16.7957 25.083C16.7957 25.1207 16.7768 25.1396 16.7768 25.1773C16.7768 25.1962 16.7768 25.2151 16.7579 25.2151C16.739 25.3094 16.7201 25.4038 16.7201 25.4981V46.8011C16.7201 47.5747 17.3624 48.2162 18.137 48.2162H45.3614C46.136 48.2162 46.7784 47.5747 46.7784 46.8011V25.517C46.7784 25.4038 46.7784 25.3094 46.7595 25.2339ZM24.9006 18.1204H38.6167L42.6786 24.0829H20.8198L24.9006 18.1204ZM43.9445 45.4048H19.5729V26.9321H43.9634V45.4048H43.9445Z" fill="#3B8ED7"/>
                             </svg>
                             
-                            <p class="font-medium text-black text-[16px] text-center">Проверка товаров <br> перед отправкой</p>
+                            <p class="font-medium text-black md:text-[16px] text-[12px] text-center">Проверка товаров <br> перед отправкой</p>
                         </div>
 
                         <div class="bg-white rounded-[30px] min-w-[255] min-h-[172px] flex flex-col items-center justify-center gap-[10px]">
@@ -477,14 +576,14 @@
                                 <path d="M22.0547 53.832C22.3477 54.125 22.7188 54.2617 23.0898 54.2617C23.4609 54.2617 23.832 54.125 24.125 53.832L44.9453 33.0117C45.5117 32.4453 45.5117 31.5078 44.9453 30.9414C44.3789 30.375 43.4414 30.375 42.875 30.9414L22.0547 51.7617C21.4688 52.3281 21.4688 53.2656 22.0547 53.832Z" fill="#3B8ED7"/>
                             </svg>  
                             
-                            <p class="font-medium text-black text-[16px] text-center">Бонусы за покупки</p>
+                            <p class="font-medium text-black md:text-[16px] text-[12px] text-center">Бонусы за покупки</p>
                         </div>
 
                      
                     </div>
                 </div>
-            </section> 
-
+            </section>
+            
             <section id="product_p" class="md:pt-[60px] pt-[40px] product-popular-swiper overflow-hidden ">
                 <div class="container product-popular-wrapper overflow-hidden">
                     <h2 class="md:text-[24px] text-[20px] font-medium">Популярный товар</h2>
@@ -492,21 +591,21 @@
                         <div class="swiper-wrapper md:p-[20px] p-[0px] relative">
                             <div class="swiper-slide rounded-[30px]">
                                 <div class="bg-white rounded-[30px] p-[15px] min-h-[440px]">
-                                    <img class="md:scale-100 scale-75" style="width: -webkit-fill-available;" src="./src/img/main/product_p_1.png" alt="">
+                                    <img class="md:scale-100 scale-75" style="width: 100%;" src="./src/img/main/product_p_1.png" alt="">
                                     <p class="text-black font-bold md:mt-[41px] sm:mt-[16px] mt-[15px]">19 000 Р</p>
                                     <p class="text-black pt-[8px] font-medium">Видео проектор Aspect, Android 9.0, WIFI, домашний, кинотеатр</p>
                                 </div>
                             </div>
                             <div class="swiper-slide rounded-[30px]">
                                 <div class="bg-white rounded-[30px] p-[15px] min-h-[440px]">
-                                    <img class="md:scale-100 scale-75" style="width: -webkit-fill-available;" src="./src/img/main/product_p_1.png" alt="">
+                                    <img class="md:scale-100 scale-75" style="width: 100%;" src="./src/img/main/product_p_1.png" alt="">
                                     <p class="text-black font-bold md:mt-[41px] sm:mt-[16px] mt-[15px]">19 000 Р</p>
                                     <p class="text-black pt-[8px] font-medium">Видео проектор Aspect, Android 9.0, WIFI, домашний, кинотеатр</p>
                                 </div>
                             </div>
                             <div class="swiper-slide rounded-[30px]">
                                 <div class="bg-white rounded-[30px] p-[15px] min-h-[440px]">
-                                    <img class="md:scale-100 scale-75" style="width: -webkit-fill-available;" src="./src/img/main/product_p_1.png" alt="">
+                                    <img class="md:scale-100 scale-75" style="width: 100%;" src="./src/img/main/product_p_1.png" alt="">
                                     <p class="text-black font-bold md:mt-[41px] sm:mt-[16px] mt-[15px]">19 000 Р</p>
                                     <p class="text-black pt-[8px] font-medium">Видео проектор Aspect, Android 9.0, WIFI, домашний, кинотеатр</p>
                                 </div>
@@ -531,27 +630,29 @@
                 </div>
             </section>
 
+
+            
             <section class="md:pt-[60px] pt-[40px]">
                 <div class="container">
                     <div id="sale_list" class="flex gap-[30px]">
                         
-                        <div class="md:flex hidden flex-col items-center justify-center relative w-[40%]">
+                        <div class="md:flex hidden flex-col items-center justify-center relative w-[30%]">
                             <div class="absolute -top-[0px]">
                                 <img class="scale-90" src="./src/img/main/persent.png" alt="">
                             </div>
 
-                            <div class="flex flex-col items-center justify-center items gap-[10px] p-[20px] rounded-[30px] w-[255px] h-[380px]" style="background-image: url('./src/img/main/sale_pattern.png'); background-position: center; background-repeat: no-repeat;">
+                            <div class="flex flex-col items-center justify-center items gap-[10px] p-[20px] rounded-[30px] w-[100%] h-[100%] relative" style="background-image: url('./src/img/main/sale_pattern.png'); background-position: center; background-repeat: no-repeat; background-size: contain; background-position-y: 76px;">
                                 <div class="flex flex-col items-center justify-center">
                                     <img class="max-w-[110px] max-h-[110px]" src="./src/img/main/pngwing 1.png" alt="">
                                 </div>
                                 
-                                <div class="flex gap-[10px] flex-col">
+                                <div class="flex gap-[10px] flex-col absolute bottom-[20px]">
                                     <div>
-                                        <p class="font-black">Телескоп F30070M</p>
+                                        <p class="md:text-[24px] text-[16px] font-black">Телескоп F30070M</p>
                                     </div>
-                                    <div class="flex gap-[10px]">
-                                        <p class="text-black font-medium">6 950 ₽</p>
-                                        <p class="text-light-gray font-medium">7 722 ₽</p>
+                                    <div class="flex gap-[10px] ">
+                                        <p class="text-[20px] text-black font-medium">6 950 ₽</p>
+                                        <p class="text-[20px] text-light-gray font-medium">7 722 ₽</p>
                                     </div>
                                 </div>
                             </div>
@@ -612,6 +713,8 @@
                 </div>
             </section>
 
+
+            
             <section id="cat_p" class="md:pt-[60px] pt-[40px]">
                 <div class="container">
                     <h2 class="md:text-[24px] text-[20px] font-medium">Популярные категории</h2>
@@ -619,7 +722,7 @@
                         <li>
                             <a href="">
                                 <div class="bg-white rounded-[17px] min-h-[190px] p-[20px]">
-                                    <img class="object-contain w-full" src="./src/img/main/cat_p_1.png" alt="">
+                                    <img class="object-contain m-auto max-h-[200px] w-full" src="./src/img/main/cat_p_1.png" alt="">
                                 </div>
                                 <p class="pt-[12px] text-black md:text-[16px] text-[14px] font-medium">Butovaya technila</p>
                             </a>
@@ -628,17 +731,7 @@
                         <li>
                             <a href="">
                                 <div class="bg-white rounded-[17px] min-h-[190px] p-[20px]">
-                                    <img class="object-contain w-full" src="./src/img/main/cat_p_1.png" alt="">
-                                </div>
-                                <p class="pt-[12px] text-black md:text-[16px] text-[14px] font-medium">Butovaya technila</p>
-                            </a>
-                        </li>
-                      
-
-                        <li>
-                            <a href="">
-                                <div class="bg-white rounded-[17px] min-h-[190px] p-[20px]">
-                                    <img class="object-contain w-full" src="./src/img/main/cat_p_1.png" alt="">
+                                    <img class="object-contain m-auto max-h-[200px] w-full" src="./src/img/main/cat_p_2.png" alt="">
                                 </div>
                                 <p class="pt-[12px] text-black md:text-[16px] text-[14px] font-medium">Butovaya technila</p>
                             </a>
@@ -648,7 +741,7 @@
                         <li>
                             <a href="">
                                 <div class="bg-white rounded-[17px] min-h-[190px] p-[20px]">
-                                    <img class="object-contain w-full" src="./src/img/main/cat_p_1.png" alt="">
+                                    <img class="object-contain m-auto max-h-[200px] w-full" src="./src/img/main/cat_p_3.png" alt="">
                                 </div>
                                 <p class="pt-[12px] text-black md:text-[16px] text-[14px] font-medium">Butovaya technila</p>
                             </a>
@@ -658,7 +751,7 @@
                         <li>
                             <a href="">
                                 <div class="bg-white rounded-[17px] min-h-[190px] p-[20px]">
-                                    <img class="object-contain w-full" src="./src/img/main/cat_p_1.png" alt="">
+                                    <img class="object-contain m-auto max-h-[200px] w-full" src="./src/img/main/cat_p_4.png" alt="">
                                 </div>
                                 <p class="pt-[12px] text-black md:text-[16px] text-[14px] font-medium">Butovaya technila</p>
                             </a>
@@ -668,7 +761,7 @@
                         <li>
                             <a href="">
                                 <div class="bg-white rounded-[17px] min-h-[190px] p-[20px]">
-                                    <img class="object-contain w-full" src="./src/img/main/cat_p_1.png" alt="">
+                                    <img class="object-contain m-auto max-h-[200px] w-full" src="./src/img/main/cat_p_5.png" alt="">
                                 </div>
                                 <p class="pt-[12px] text-black md:text-[16px] text-[14px] font-medium">Butovaya technila</p>
                             </a>
@@ -678,7 +771,7 @@
                         <li>
                             <a href="">
                                 <div class="bg-white rounded-[17px] min-h-[190px] p-[20px]">
-                                    <img class="object-contain w-full" src="./src/img/main/cat_p_1.png" alt="">
+                                    <img class="object-contain m-auto max-h-[200px] w-full" src="./src/img/main/cat_p_6.png" alt="">
                                 </div>
                                 <p class="pt-[12px] text-black md:text-[16px] text-[14px] font-medium">Butovaya technila</p>
                             </a>
@@ -688,7 +781,17 @@
                         <li>
                             <a href="">
                                 <div class="bg-white rounded-[17px] min-h-[190px] p-[20px]">
-                                    <img class="object-contain w-full" src="./src/img/main/cat_p_1.png" alt="">
+                                    <img class="object-contain m-auto max-h-[200px] w-full" src="./src/img/main/cat_p_7.png" alt="">
+                                </div>
+                                <p class="pt-[12px] text-black md:text-[16px] text-[14px] font-medium">Butovaya technila</p>
+                            </a>
+                        </li>
+                      
+
+                        <li>
+                            <a href="">
+                                <div class="bg-white rounded-[17px] min-h-[190px] p-[20px]">
+                                    <img class="object-contain m-auto max-h-[200px] w-full" src="./src/img/main/cat_p_8.png" alt="">
                                 </div>
                                 <p class="pt-[12px] text-black md:text-[16px]
                                 text-[14px] font-medium">Butovaya technila</p>
@@ -698,7 +801,7 @@
                       
                     </ul>
                 </div>
-            </section> -->
+            </section>
         </main>
 
         <footer class="footer page-section-3 bg-gray md:pt-[40px] sm:pt-[20px] pt-[18px] md:mt-[40px] sm:mt-[20px] mt-[18px]">

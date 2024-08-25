@@ -43,4 +43,24 @@
         min-width: auto;
         width: auto !important;   
     }
+    .new-wrapper .new-item {
+        border-radius: 0px 0px 30px 30px;
+        padding: 0px 30px 30px 30px !important;
+
+    }
+    .new-wrapper .new-slide .new-item:first-child img {
+        padding-top: 10px;
+        margin: 0 auto;
+    }
+    new-wrapper .new-slide:nth-of-type(2) img {
+        max-height: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .new-wrapper .new-slide:nth-of-type(3) img {
+        max-height: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
 }
