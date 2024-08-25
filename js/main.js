@@ -1,8 +1,7 @@
 import { initNav } from "./module/nav.js";
 import { initPopup } from "./module/popup.js";
 import { initModal } from "./module/modal.js";
-import { initProductPopularSlider, initMainSwiper, initHitSwiper, initNewSlider, initSaleSlider } from "./module/sliders.js";
-
+import { initProductPopularSlider, initMainSwiper, initHitSwiper, initNewSlider, initSaleSlider, initAllCategorySwiper } from "./module/sliders.js";
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -17,6 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initHitSwiper();
     initNewSlider();
     initSaleSlider();  
+    initAllCategorySwiper();
     
 
 });
